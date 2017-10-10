@@ -1,0 +1,70 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+ext {
+    bintrayRepo = 'maven' //the maven repo name (created on bintray)
+    bintrayName = 'MaterialTimelineView' //the name you want to give at your project on bintray
+    orgName = 'hypeapps' //your user name
+
+    publishedGroupId = "pl.hypeapp" //aaaa : the librairy group
+    artifact = 'materialtimelineview' //BBBB : the library name
+    libraryVersion = "1.0" //the librairy version
+
+    //the library will be : aaaa:BBBB:version
+
+    libraryName = 'MaterialTimelineView'
+    libraryDescription = 'TODO!!!!!!!!!!!!'
+
+    siteUrl = 'https://github.com/hypeapps/MaterialTimelineView'
+    gitUrl = 'https://github.com/hypeapps/MaterialTimelineView.git'
+
+    developerId = 'hypeapps'
+    developerName = 'Przemyslaw Szymkowiak'
+    developerEmail = 'pszem.szym@gmail.com'
+
+    licenseName = 'MIT'
+    licenseUrl = 'https://opensource.org/licenses/MIT'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            java.srcDirs += 'src/main/kotlin'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply from: rootProject.file('gradle/install-v1.gradle')
+apply from: rootProject.file('gradle/bintray-android-v1.gradle')
