@@ -5,6 +5,7 @@ import android.content.res.TypedArray
 import android.graphics.*
 import android.support.constraint.ConstraintLayout
 import android.util.AttributeSet
+import android.util.TypedValue
 import android.view.View
 
 class MaterialTimelineView(context: Context, attrs: AttributeSet?, defStyleAttr: Int)
@@ -109,10 +110,10 @@ class MaterialTimelineView(context: Context, attrs: AttributeSet?, defStyleAttr:
         }
     }
 
-    private fun drawTimelineTypeLine(canvas: Canvas){
+    private fun drawTimelineTypeLine(canvas: Canvas) {
         val x = radioMarginStart
         val y = height.toFloat()
-        when(position){
+        when (position) {
             POSITION_FIRST -> {
                 drawLine(canvas, x - radioRadius / 2, radioRadius, x + radioRadius / 2, y)
                 drawRadio(canvas, topRadioColor, x, radioRadius)
@@ -124,7 +125,7 @@ class MaterialTimelineView(context: Context, attrs: AttributeSet?, defStyleAttr:
                 drawRadio(canvas, bottomRadioColor, x, y)
             }
             POSITION_LAST -> {
-                drawLine(canvas, x - radioRadius / 2, 0f, x + radioRadius / 2, y -radioRadius)
+                drawLine(canvas, x - radioRadius / 2, 0f, x + radioRadius / 2, y - radioRadius)
                 drawRadio(canvas, topRadioColor, x, 0f)
                 drawRadio(canvas, bottomRadioColor, x, y - radioRadius)
             }
@@ -153,7 +154,9 @@ class MaterialTimelineView(context: Context, attrs: AttributeSet?, defStyleAttr:
         this.timelineType = typedArray.getInteger(R.styleable.MaterialTimelineView_timeline_type, TIMELINE_TYPE_LINE)
         this.radioRadius = typedArray.getFloat(R.styleable.MaterialTimelineView_timeline_radio_radius, DEFAULT_RADIO_RADIUS)
         this.radioOutlineRadius = typedArray.getFloat(R.styleable.MaterialTimelineView_timeline_radio_outline_radius, DEFAULT_RADIO_OUTLINE_RADIUS)
-        this.radioMarginStart = typedArray.getFloat(R.styleable.MaterialTimelineView_timeline_margin_start, DEFAULT_RADIO_MARGIN_START)
+        this.radioMarginStart = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_PX,
+                typedArray.getDimension(R.styleable.MaterialTimelineView_timeline_margin_start, DEFAULT_RADIO_MARGIN_START),
+                resources.displayMetrics)
         this.topRadioColor = typedArray.getColor(R.styleable.MaterialTimelineView_timeline_top_radio_color, Color.WHITE)
         this.bottomRadioColor = typedArray.getColor(R.styleable.MaterialTimelineView_timeline_bottom_radio_color, Color.WHITE)
         this.lineColor = typedArray.getColor(R.styleable.MaterialTimelineView_timeline_line_color, Color.WHITE)

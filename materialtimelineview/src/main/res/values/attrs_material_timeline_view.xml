@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="MaterialTimelineView">
+    <declare-styleable name="MaterialTimelineView" parent="">
         <attr name="timeline_position">
             <enum name="first" value="0"/>
             <enum name="middle" value="1"/>
@@ -12,7 +12,7 @@
         </attr>
         <attr name="timeline_radio_radius" format="float"/>
         <attr name="timeline_radio_outline_radius" format="float"/>
-        <attr name="timeline_margin_start" format="float"/>
+        <attr name="timeline_margin_start" format="dimension"/>
         <attr name="timeline_top_radio_color" format="color"/>
         <attr name="timeline_bottom_radio_color" format="color"/>
         <attr name="timeline_line_color" format="color"/>
