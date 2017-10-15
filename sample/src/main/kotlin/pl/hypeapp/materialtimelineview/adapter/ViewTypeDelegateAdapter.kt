@@ -9,8 +9,4 @@ interface ViewTypeDelegateAdapter {
 
     fun onBindViewHolder(holder: RecyclerView.ViewHolder, item: ViewType)
 
-    interface OnViewSelectedListener {
-        fun onItemSelected()
-    }
-
 }
