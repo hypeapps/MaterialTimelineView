@@ -1,6 +1,6 @@
-package pl.hypeapp.materialtimelineview.model
+package pl.hypeapp.materialtimelinesample.model
 
-import pl.hypeapp.materialtimelineview.adapter.ViewType
+import pl.hypeapp.materialtimelinesample.adapter.ViewType
 
 data class Timepoint(val timepoint: String,
                      val description: String) : ViewType {

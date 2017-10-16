@@ -1,11 +1,11 @@
-package pl.hypeapp.materialtimelineview.adapter
+package pl.hypeapp.materialtimelinesample.adapter
 
 import android.support.v4.util.SparseArrayCompat
 import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup
-import pl.hypeapp.materialtimelineview.model.CityWeather
-import pl.hypeapp.materialtimelineview.model.Timepoint
-import pl.hypeapp.materialtimelineview.model.Weather
+import pl.hypeapp.materialtimelinesample.model.CityWeather
+import pl.hypeapp.materialtimelinesample.model.Timepoint
+import pl.hypeapp.materialtimelinesample.model.Weather
 
 class TimelineRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

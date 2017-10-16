@@ -1,4 +1,4 @@
-package pl.hypeapp.materialtimelineview.adapter
+package pl.hypeapp.materialtimelinesample.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup

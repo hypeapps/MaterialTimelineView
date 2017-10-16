@@ -2,7 +2,6 @@
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:xmls="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardBackgroundColor="@android:color/transparent"
@@ -18,8 +17,7 @@
         app:layout_constraintEnd_toStartOf="parent"
         app:timeline_margin_start="32dp"
         app:timeline_position="first"
-        app:timeline_type="item"
-        xmls:app="android.support.design.widget.CoordinatorLayout">
+        app:timeline_type="item">
 
         <ImageView
             android:id="@+id/weather_icon"
