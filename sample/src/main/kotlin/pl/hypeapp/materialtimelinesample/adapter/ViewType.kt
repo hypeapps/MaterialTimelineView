@@ -1,4 +1,4 @@
-package pl.hypeapp.materialtimelineview.adapter
+package pl.hypeapp.materialtimelinesample.adapter
 
 interface ViewType {
 

@@ -1,13 +1,13 @@
-package pl.hypeapp.materialtimelineview.adapter
+package pl.hypeapp.materialtimelinesample.adapter
 
 import android.support.v4.content.ContextCompat
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.item_weather.view.*
+import pl.hypeapp.materialtimelinesample.R
+import pl.hypeapp.materialtimelinesample.model.Weather
 import pl.hypeapp.materialtimelineview.MaterialTimelineView
-import pl.hypeapp.materialtimelineview.R
-import pl.hypeapp.materialtimelineview.model.Weather
 
 class WeatherItemDelegateAdapter : ViewTypeDelegateAdapter {
 
@@ -45,6 +45,10 @@ class WeatherItemDelegateAdapter : ViewTypeDelegateAdapter {
                 "Clear sky" -> {
                     item_weather_timeline.setBackgroundColor(ContextCompat.getColor(context, R.color.clear))
                     weather_icon.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_clear))
+                }
+                "Windy" -> {
+                    item_weather_timeline.setBackgroundColor(ContextCompat.getColor(context, R.color.clear))
+                    weather_icon.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.ic_windy))
                 }
             }
         }

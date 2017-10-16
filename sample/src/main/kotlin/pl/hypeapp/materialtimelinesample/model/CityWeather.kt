@@ -1,6 +1,6 @@
-package pl.hypeapp.materialtimelineview.model
+package pl.hypeapp.materialtimelinesample.model
 
-import pl.hypeapp.materialtimelineview.adapter.ViewType
+import pl.hypeapp.materialtimelinesample.adapter.ViewType
 
 data class CityWeather(val city: String,
                        val weatherDescription: String,
