@@ -1,5 +1,5 @@
 # MaterialTimelineView [![Build Status](https://travis-ci.org/hypeapps/MaterialTimelineView.svg?branch=master)](https://travis-ci.org/hypeapps/MaterialTimelineView) [![Download](https://api.bintray.com/packages/hypeapps/maven/MaterialTimelineView/images/download.svg)](https://bintray.com/hypeapps/maven/MaterialTimelineView/_latestVersion) [![Platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-With MaterialTimelineView you can easily create material looking timeline.
+With MaterialTimelineView you can easily create a material looking timeline.
 
 ![Banner](https://github.com/hypeapps/MaterialTimelineView/blob/master/img/material_timeline_banner.png?raw=true)
 <a href="https://play.google.com/store/apps/details?id=pl.hypeapp.materialtimelinesample" target="_blank">
