@@ -110,6 +110,7 @@ materialTimelineView.lineColor = Color.Black // Default Color.White
 
 ## Apps that use MaterialTimelineView
 - [Episodie](https://github.com/hypeapps/episodie)
+- [Family GPS tracker & chat + Baby Monitor Online](https://play.google.com/store/apps/details?id=gl.kid.alert)
 
 If you're using this library in your app and you'd like to list it here,
 Please let me know via [email](mailto:pszem.szym@gmail.com), [pull requests](https://github.com/hypeapps/MaterialTimelineView/pulls) or [issues](https://github.com/hypeapps/MaterialTimelineView/issues).
