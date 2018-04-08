@@ -12,7 +12,7 @@ so you just need to add the following to your ***build.gradle*** file:
 ```groovy
 
 dependencies {
-    implementation 'pl.hypeapp:materialtimelineview:1.0'
+    implementation 'pl.hypeapp:materialtimelineview:1.1'
 }
 
 ```
